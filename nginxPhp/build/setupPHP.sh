@@ -1,5 +1,6 @@
 #make the session directory for php
 mkdir -p /var/lib/php/session
+
 #set the permissions for the directory so php can write to it
 chown -R amlwwalker:amlwwalker /var/lib/php/session
 chmod -R 755 /var/lib/php/session

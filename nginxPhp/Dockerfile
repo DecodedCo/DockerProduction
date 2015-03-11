@@ -3,7 +3,11 @@ MAINTAINER alex alex@decoded.co
 USER root
 ADD ./build /build
 RUN mkdir /srv/ssl/
-RUN chown amlwwalker:amlwwalker /srv/ssl
+RUN mkdir /srv/phpapplications/
+RUN chown -R amlwwalker:amlwwalker /srv/ssl
+RUN chown -R amlwwalker:amlwwalker /srv/phpapplications
+RUN chmod -R 777 /srv/ssl
+RUN chmod -R 777 /srv/phpapplications
 RUN chmod 777 /build/*
 RUN /build/customInstall.sh
 RUN /build/setupSupervisord.sh

@@ -6,7 +6,8 @@ RUN tar -zxf node-v0.12.0.tar.gz
 RUN cd /node-v0.12.0 && ./configure
 RUN cd /node-v0.12.0 && make
 RUN cd /node-v0.12.0 && make install
-COPY ./src /src
-RUN cd /src; npm install
+#COPY ./src /src
+#RUN cd /src; npm install
 EXPOSE 8080
-CMD ["node", "/src/index.js"]
+CMD ["cd /srv/app", "npm install"]
+CMD ["node", "/srv/app/app.js"]

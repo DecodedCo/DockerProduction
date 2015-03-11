@@ -6,5 +6,5 @@ RUN chmod 777 /build/*
 RUN /build/customInstall.sh
 #USER amlwwalker
 RUN /build/setup.sh
-RUN /build/installgo.sh
+RUN /build/installrevel.sh
 RUN . ~/.bash_profile
