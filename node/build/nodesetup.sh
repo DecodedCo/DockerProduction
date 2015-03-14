@@ -1,4 +1,4 @@
-
+npm install -g forever
 cd /srv/app;
 npm install;
-node app.js
+forever -w app.js

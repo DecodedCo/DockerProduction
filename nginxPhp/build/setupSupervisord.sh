@@ -1,5 +1,7 @@
 #!/bin/bash
 
+easy_install supervisor
+
 read -d '' SUPERCONF <<EOF 
 [supervisord]
 nodaemon=true

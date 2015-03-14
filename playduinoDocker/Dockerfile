@@ -7,4 +7,5 @@ RUN /build/customInstall.sh
 #USER amlwwalker
 RUN /build/setup.sh
 RUN /build/installrevel.sh
-RUN . ~/.bash_profile
+CMD [".", "~/.bash_profile"]
+

@@ -5,10 +5,10 @@ yum -y install nginx php php-mysql php-pgsql php-fpm php-pecl-apc php-pdo
 
 sed -i -e '/gzip/c\	gzip on;' /etc/nginx/nginx.conf
 sed -i -e '/include \/etc\/nginx/c\	include \/etc\/nginx\/sites-enabled\/*.conf;' /etc/nginx/nginx.conf
-mkdir /etc/nginx/sites-available
-mkdir /etc/nginx/sites-enabled
-chown amlwwalker:amlwwalker /etc/nginx/sites-*
-chmod 700 /etc/nginx/sites-*
+#mkdir /etc/nginx/sites-available
+#mkdir /etc/nginx/sites-enabled
+#chown amlwwalker:amlwwalker /etc/nginx/sites-*
+#chmod 700 /etc/nginx/sites-*
 
 easy_install supervisor #going to need supervisor to manage PHP and NGINX
 

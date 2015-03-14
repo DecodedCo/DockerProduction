@@ -11,7 +11,8 @@ cat ~/.bashrc
 . ~/.bashrc
 which java
 
-mkdir -p /tmp/inotest; cd /tmp/inotest; ino init -t blink; ino build;
+#mkdir -p /tmp/inotest; cd /tmp/inotest; ino init -t blink; ino build;
 
 echo "testing connection..."
 ping -c 4 www.google.com
+#mkdir ~/go/src/goapplication
